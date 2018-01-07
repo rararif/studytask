@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <%= stylesheet_link_tag "style" %>
+
+  <%= javascript_include_tag "script" %>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+  <div class="text-container">
+    <h1 class="title"> Current Weather in cities </h1>
+    <a class="arrow" href="#section2"><span></span>&#9660;</a>
+  </div>
+</div>
+
+
+
+<h4>Current Date and Time is: <%= Time.now().strftime("%d/%m/%Y %H:%M")%></h4>
+
+<!--
+<button id="submitWeather" class="submitWeather"><a class="arrow" href="prog.html.erb">Узнать прогноз</a></button>
+</div><br>-->
+
+
+
+
+<h1>Weather in chosen city right now</h1>
+<h3>Enter city name</h3>
+<span id="error"></span>
+<div>
+  <input size="25" type="text" name="city" id="city" class="city" placeholder="City Name" required>
+  <button id="submitWeather" class="submitWeather">Search City</button>
+</div><br>
+<div id="show"></div>
+
+<br><br>
+<h1>Weather in several cities right now</h1>
+<table class="CitiesTable">
+  <tr>
+    <th>City Name</th>
+    <th>Pressure,mmHg</th>
+    <th>Temperature,°C</th>
+    <th>Humidity,%</th>
+    <th>Cloud Cover,%</th>
+    <th>Wind,m/s</th>
+    <th>Wind direction,°</th>
+    <th>Weather condition</th>
+  </tr>
+
+  <% @lookup.each do |l| %>
+      <tr>
+        <td><%= l["name"] %></td>
+        <td><%= l["main"]["pressure"] * 0.75 %></td> <!--transfer from hPA to mmHg-->
+        <td><%= l["main"]["temp"] %></td>
+        <td><%= l["main"]["humidity"] %></td>
+        <td><%= l["clouds"]["all"] %></td>
+        <td><%= l["wind"]["speed"] %></td>
+        <td><%= l["wind"]["deg"] %></td>
+        <td><%= l["weather"][0]["main"] %></td>
+      </tr>
+  <% end %>
+</table>
+
+
+
+
+
+  <h2> Nice Weather now is in: </h2>
+<table>
+  <tr class="BestWeatherTable">
+    <tr>
+      <th>Hottest Temperature, °C</th>
+
+      <th>Lowest Humidity, %</th>
+      <th>Lowest Cloud Cover,%</th>
+
+    </tr>
+
+  <tr>
+  <% @best.each do |b| %>
+
+        <td><%= b[0] %>,
+        <%= b[1] %></td>
+
+
+  <% end %>
+  </tr>
+
+</table>
+
+
+
+
+  <%= javascript_include_tag "wip" 'data-turbolinks-track' => true %>
+ <!-- <h4>Recommended city:</h4>
+  <p><%= @recommend %></p> -->
+
+</section>
+
+</body>
+</html>
