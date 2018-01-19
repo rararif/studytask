@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <%= stylesheet_link_tag "style" %>
+
+  <%= javascript_include_tag "script" %>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+  <li class="nav"><%= " active" if I18n.locale == :ru %> <%= link_to "Rus",{locale: :ru }%> </li>
+  <li class="nav"><%= " active" if I18n.locale == :en %> <%= link_to "En",{locale: :en }%> </li>
+
+<div class="header">
+  <div class="text-container">
+    <h1 class="title"><%= t("wf.title")%> </h1>
+    <a class="arrow" href="#section2"><span></span>&#9660;</a>
+  </div>
+</div>
+<br>
+
+<div class="content">
+<div><button id="forecastbtn" class="forecastbtn"><a class="forecastbtn" href="/weather/index.html"><%= t("wf.btnback") %> </a></button>
+</div>
+
+<h1><%= t("wf.title")%> </h1>
+
+
+<%= form_for(:showforecast, url: showforecast_index_path) do |f|%>
+    <%= f.label(:cityname, "Enter city name:") %>
+    <%= f.text_field(:cityname, :required => true) %>
+    <%= f.label(:countryname, "Enter country code (two letters):") %>
+    <%= f.text_field(:countryname, :required => true) %>
+    <%= f.submit 'Submit' %>
+    <% end %>
+
+
+</div><h1></h1><h1></h1><h1></h1><br><br><br><br><br><br>
+<div class="footer">
+  <div class="footertxt">Weather app</div>
+</div>
+</div>
+</body></html>

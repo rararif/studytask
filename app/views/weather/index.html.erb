@@ -8,47 +8,52 @@
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 
-<body>
-
-<div class="header">
-  <div class="text-container">
-    <h1 class="title"> Current Weather in cities </h1>
-    <a class="arrow" href="#section2"><span></span>&#9660;</a>
-  </div>
-</div>
-
-
-
-<h4>Current Date and Time is: <%= Time.now().strftime("%d/%m/%Y %H:%M")%></h4>
-
-<!--
-<button id="submitWeather" class="submitWeather"><a class="arrow" href="prog.html.erb">Узнать прогноз</a></button>
-</div><br>-->
-
-
-
-
-<h1>Weather in chosen city right now</h1>
-<h3>Enter city name</h3>
-<span id="error"></span>
 <div>
-  <input size="25" type="text" name="city" id="city" class="city" placeholder="City Name" required>
-  <button id="submitWeather" class="submitWeather">Search City</button>
-</div><br>
-<div id="show"></div>
+<div class="wrapper">
+  <li class="nav"><%= " active" if I18n.locale == :ru %> <%= link_to "Rus",{locale: :ru }%> </li>
+  <li class="nav"><%= " active" if I18n.locale == :en %> <%= link_to "En",{locale: :en }%> </li>
 
-<br><br>
-<h1>Weather in several cities right now</h1>
-<table class="CitiesTable">
-  <tr>
-    <th>City Name</th>
-    <th>Pressure,mmHg</th>
-    <th>Temperature,°C</th>
-    <th>Humidity,%</th>
-    <th>Cloud Cover,%</th>
-    <th>Wind,m/s</th>
-    <th>Wind direction,°</th>
-    <th>Weather condition</th>
+
+  <div class="header">
+    <div class="text-container">
+      <h1 class="title"><%= t("main.title") %>  </h1>
+      <a class="arrow" href="#section2"><span></span>&#9660;</a>
+    </div>
+  </div>
+
+<div class="content">
+  <h5><%= t("main.time") %> <%= Time.now().strftime("%d/%m/%Y %H:%M")%></h5>
+
+
+  <button id="forecastbtn" class="forecastbtn"><a class="forecastbtn" href="/forecast/index.html"><%= t("main.btn") %> </a></button>
+  </div>
+
+
+  <h1><%= t("main.header") %> </h1>
+  <h3><%= t("main.entercity") %> </h3>
+  <span id="error"></span>
+  <div>
+  <input size="25" type="text" name="city" id="city" class="city" required><br><br>
+
+  <div> <%= t("main.slidetoday")%> <input type="range" id="slider" min="1" max="2" value="1"> <%= t("main.slidetom")%></div><br>
+    <button id="submitWeather" class="submitWeather"><%= t("main.searchbtn")%> </button><br>
+  </div><br>
+  <div id="output" hidden> </div>
+  <br>
+  <div id="show"></div>
+
+  <br>
+  <h1><%= t("main.top")%>  </h1>
+  <table class="CitiesTable">
+    <tr>
+    <th><%= t("main.tblcityname")%></th>
+    <th><%= t("main.tblpressure")%></th>
+    <th><%= t("main.tbltemp")%></th>
+    <th><%= t("main.tblhum")%></th>
+    <th><%= t("main.tblcloud")%></th>
+    <th><%= t("main.tblwindspd")%></th>
+    <th><%= t("main.tblwinddir")%></th>
+    <th><%= t("main.tblwdescr")%></th>
   </tr>
 
   <% @lookup.each do |l| %>
@@ -63,20 +68,16 @@
         <td><%= l["weather"][0]["main"] %></td>
       </tr>
   <% end %>
-</table>
+  </table>
 
-
-
-
-
-  <h2> Nice Weather now is in: </h2>
-<table>
+  <h2><%= t("main.nice")%>   </h2>
+  <table>
   <tr class="BestWeatherTable">
     <tr>
-      <th>Hottest Temperature, °C</th>
+      <th><%= t("main.nicehot")%></th>
 
-      <th>Lowest Humidity, %</th>
-      <th>Lowest Cloud Cover,%</th>
+      <th><%= t("main.nicehum")%> </th>
+      <th><%= t("main.nicecloud")%></th>
 
     </tr>
 
@@ -90,16 +91,18 @@
   <% end %>
   </tr>
 
-</table>
+  </table>
+  <br><br><br><br>
+
+<%= javascript_include_tag "wip" 'data-turbolinks-track' => true %>
 
 
+</div>
 
+<div class="footer">
+  <div class="footertxt">Weather app</div>
+</div>
 
-  <%= javascript_include_tag "wip" 'data-turbolinks-track' => true %>
- <!-- <h4>Recommended city:</h4>
-  <p><%= @recommend %></p> -->
-
-</section>
-
+</div>
 </body>
 </html>

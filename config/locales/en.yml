@@ -31,3 +31,49 @@
 
 en:
   hello: "Hello world"
+  main:
+        title: "Current Weather"
+
+        time: "Current Date and Time is:"
+
+        btn: "Get Forecast"
+
+        header: "Check weather in your city now"
+
+        entercity: "Enter city name"
+
+        slidetoday: "Today"
+
+        slidetom: "Tomorrow"
+
+        searchbtn: "Search"
+
+        top: "Top 7 russian cities"
+
+        tblcityname: "City Name"
+
+        tblpressure: "Pressure,mmHg"
+
+        tbltemp: "Temperature,°C"
+
+        tblhum: "Humidity,%"
+
+        tblcloud: "Cloud Cover, %"
+
+        tblwindspd: "Wind,m/s"
+
+        tblwinddir: "Wind direction,°"
+
+        tblwdescr: "Weather condition"
+
+        nice: "Nice Weather now is in: "
+
+        nicehot: "Hottest Temperature, °C"
+
+        nicehum: "Lowest Humidity, %"
+
+        nicecloud: "Lowest Cloud Cover,%"
+  wf:
+      title: "Weather Forecast"
+      btnback: "Back"
+      header: "This is a 3 day weather forecast for this city:"
