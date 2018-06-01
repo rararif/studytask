@@ -1,0 +1,143 @@
+/*html, head {*/
+    /*margin: 0px;*/
+    /*margin-top: 0px;*/
+
+    /*padding: 0px;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+/*body {*/
+    /*margin-left: 1%;*/
+    /*font-family: 'Titillium Web', sans-serif, 'Helvetica', sans-serif;*/
+/*}*/
+
+/*p, div {*/
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+
+/*}*/
+
+/*.header {*/
+    /*height: 25vh;*/
+
+    /*background: linear-gradient(to right, lightseagreen , dodgerblue);*/
+
+    /*padding: 0px;*/
+/*}*/
+
+/*.header .text-container {*/
+    /*max-width: 100%;*/
+/*}*/
+
+/*.text-container {*/
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    /*width: 50%;*/
+    /*top: 25%;*/
+    /*position: relative;*/
+/*}*/
+
+/*.title {*/
+    /*font-family: 'Titillium Web', sans-serif,'Helvetica', sans-serif;*/
+    /*color: white;*/
+/*}*/
+
+/*.arrow {*/
+    /*color: white;*/
+    /*text-decoration: none;*/
+/*}*/
+/*.submitWeather,.city{*/
+    /*font-family: 'Titillium Web', sans-serif,'Helvetica', sans-serif;*/
+    /*font-size: medium;*/
+/*}*/
+/*#show{*/
+    /*margin-left: 5%;*/
+/*}*/
+/*.forecastbtn {*/
+    /*font-size: large;*/
+    /*font-family: 'Titillium Web', sans-serif,'Helvetica', sans-serif;*/
+    /*text-decoration: none;*/
+/*}*/
+/*!**/
+/*.arrow: hover {*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+/*}*!*/
+
+/*table {*/
+    /*margin-left: 5%;*/
+    /*font-family: 'Titillium Web', sans-serif,'Helvetica', sans-serif;*/
+    /*font-size: 18px;*/
+    /*border-collapse: collapse;*/
+    /*text-align: center;*/
+/*}*/
+/*th, td:first-child {*/
+    /*background: #AFCDE7;*/
+    /*color: white;*/
+    /*padding: 10px 20px;*/
+/*}*/
+/*th, td {*/
+    /*border-style: solid;*/
+    /*border-width: 0 1px 1px 0;*/
+    /*border-color: white;*/
+/*}*/
+/*td {*/
+    /*background: #D8E6F3;*/
+/*}*/
+/*th:first-child, td:first-child {*/
+    /*text-align: left;*/
+/*}*/
+
+/*.BestWeatherTable th, td:first-child{*/
+    /*background: #D8E6F3;*/
+    /*color:black;*/
+/*}*/
+
+/*.block{*/
+    /*border:1px solid #cccccc;*/
+    /*width: 32%;*/
+    /*margin-bottom:20px;*/
+
+    /*overflow:hidden;*/
+    /*display: inline-block;*/
+    /*background: #fcfcfc;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.clear{*/
+    /*width: 100%;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*#wrap{*/
+    /*text-align: justify;*/
+    /*padding: 2px;*/
+/*}*/
+
+/*.wrapper {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*height: 100%;*/
+/*}*/
+/*.content {*/
+    /*flex: 1 0 auto;*/
+/*}*/
+/*.footer {*/
+    /*flex: 0 0 auto;*/
+    /*height: 10vh;*/
+
+    /*background: linear-gradient(to right, lightseagreen , dodgerblue);*/
+
+    /*padding: 0px;*/
+/*}*/
+/*.footertxt {text-align: center; color: white; padding-top: 1%}*/
+/*#show{*/
+    /*font-family: 'Titillium Web', sans-serif,'Helvetica', sans-serif;*/
+    /*font-size: 18px;*/
+    /*width: 32%;*/
+    /*margin-bottom:20px;*/
+
+/*}*/
+/*.nav{*/
+    /*list-style-type: none;*/
+/*}*/

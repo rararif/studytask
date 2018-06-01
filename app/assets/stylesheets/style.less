@@ -1,0 +1,170 @@
+// Color variables (appears count calculates by raw css)
+
+//
+//body * {
+//  color: red!important;
+//}
+
+@color0: #d8e6f3; // Appears 3 times
+@color1: #afcde7; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 100%; // Appears 4 times
+@width1: 32%; // Appears 2 times
+@width2: 50%; // Appears 1 time
+
+// Height variables (appears count calculates by raw css)
+@height0: 10vh; // Appears 1 time
+@height1: 25vh; // Appears 1 time
+@height2: 100%; // Appears 3 times
+
+//
+@font:'Titillium Web', sans-serif, 'Helvetica', sans-serif;
+
+html {
+  height: @height2;
+  margin-top: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: @width0;
+}
+head {
+    height: @height2;
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: @width0;
+}
+body {
+    font-family: @font;
+    margin-left: 1%;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background: linear-gradient(to right, lightseagreen , dodgerblue);
+    height: @height1;
+    padding: 0px;
+.text-container {
+    max-width: @width0;
+}
+}
+.text-container {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 25%;
+    width: @width2;
+}
+.title {
+    color: white;
+    font-family: @font;
+}
+.arrow {
+    color: white;
+    text-decoration: none;
+}
+.submitWeather {
+    font-family: @font;
+    font-size: medium;
+}
+.city {
+    font-family: @font;
+    font-size: medium;
+}
+#show {
+    font-family: @font;
+    font-size: 18px;
+    margin-bottom:20px;
+    margin-left: 5%;
+    width: @width1;
+}
+.forecastbtn {
+    font-family: @font;
+    font-size: large;
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+    font-family: @font;
+    font-size: 18px;
+    margin-left: 5%;
+    text-align: center;
+}
+th {
+    background: @color1;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: white;
+    padding: 10px 20px;
+&:first-child {
+     text-align: left;
+ }
+}
+td {
+    background: @color0;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+&:first-child {
+     background: @color0;
+     background: @color1;
+     color: white;
+     color:black;
+     padding: 10px 20px;
+     text-align: left;
+ }
+}
+.BestWeatherTable {
+th {
+    background: @color0;
+    color:black;
+}
+}
+.block {
+    background: #fcfcfc;
+    border:1px solid #cccccc;
+    display: inline-block;
+    margin-bottom:20px;
+    overflow:hidden;
+    text-align: center;
+    width: @width1;
+}
+.clear {
+    display: inline-block;
+    width: @width0;
+}
+#wrap {
+    padding: 2px;
+    text-align: justify;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: @height2;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    background: linear-gradient(to right, lightseagreen , dodgerblue);
+    flex: 0 0 auto;
+    height: @height0;
+    padding: 0px;
+}
+.footertxt {
+    color: white;
+    padding-top: 1%;
+    text-align: center;
+}
+.nav {
+    list-style-type: none;
+}
