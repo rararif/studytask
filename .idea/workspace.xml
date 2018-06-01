@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02e618ff-ee31-4c82-8637-8f5e6d111096" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/testapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="02e618ff-ee31-4c82-8637-8f5e6d111096" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -449,12 +442,12 @@
       <workItem from="1523091519676" duration="3729000" />
       <workItem from="1524085742335" duration="461000" />
       <workItem from="1524509364407" duration="371000" />
-      <workItem from="1527873304245" duration="2230000" />
+      <workItem from="1527873304245" duration="2506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181628000" />
+    <option name="totallyTimeSpent" value="181904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="810" extended-state="0" />
